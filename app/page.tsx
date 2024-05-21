@@ -13,6 +13,7 @@ import MagnerticWrapper from "./components/visualEffects/magnetic-wrapper";
 import ScrollDown from "./components/ui/scroll-down";
 import { DiVim } from "react-icons/di";
 import LandingSection from "@/sections/landing";
+import FeaturedSection from "@/sections/featured";
 export default function Home() {
   return (
     <WaterWveWrapper
@@ -23,7 +24,9 @@ export default function Home() {
     >
       {() => (
       <div>
+
         <LandingSection />
+        <FeaturedSection/>
       </div>
       )}
     </WaterWveWrapper>

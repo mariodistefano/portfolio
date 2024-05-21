@@ -7,11 +7,11 @@ import GrainEffect from "./components/visualEffects/grain-effects";
 import { Cursor } from "./components/cursor/cursor";
 
 const MainFont = Bricolage_Grotesque({ subsets: ["latin"] });
-const OswardFont = Oswald({ subsets: ["latin"], variable: "--font-osward" });
 const PixelFont = locaFont({
   src: "../public/assets/fonts/pixel-font-7.ttf",
-  variable: "--font-oswald",
+  variable: "--font-pixel",
 });
+const OswardFont = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 //metadata
 export const metadata: Metadata = {
   title: "Mario Di Stefano",
@@ -28,8 +28,8 @@ export default function RootLayout({
       <body
         className={cn(
           MainFont.className,
-          OswardFont.variable,
-          PixelFont.variable
+          PixelFont.variable,
+          OswardFont.variable
         )}
       >
         <GrainEffect />
